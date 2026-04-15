@@ -999,3 +999,18 @@ It's common practice to reset these at the top of your CSS file:
 >  The `*` selector means **"apply this to every single element."** This gives you a clean, predictable starting point before you add your own styles.
 
 
+# Task 1-a note
+
+The **`vertical-align`** property sets the vertical alignment of an inline, inline-block, or table-cell box and 
+
+```css
+/* Keyword values */
+vertical-align: baseline;
+vertical-align: sub;
+vertical-align: super;
+vertical-align: text-top;
+vertical-align: text-bottom;
+vertical-align: middle;
+vertical-align: top;
+vertical-align: bottom;
+```
