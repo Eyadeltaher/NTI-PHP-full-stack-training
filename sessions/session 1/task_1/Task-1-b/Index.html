@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <img src="/images/covid-19-healthcare-workers-pandemic-concept-professional-confident-smiling-asian-female-doctor-nurse-scrubs-with-stethoscope-examinations-cross-arms-look-camera-1.png"
+        alt="nurse">
+
+    <div id="appointmentForm">
+        <h1>Doctor Appointment Form</h1>
+        <hr>
+
+        <form>
+            <div>
+                <label>Appointment Date</label>
+                <input type="date" name="date" class="hisInput"><br>
+            </div>
+
+            <div>
+                <label>Appointment Time</label>
+                <input type="time" name="time" class="hisInput"><br>
+            </div>
+
+            <div>
+                <label>Name</label>
+                <input type="text" name="first_name" placeholder="First" class="bigInput">
+                <input type="text" name="last_name" placeholder="last" class="bigInput"><br>
+            </div>
+
+            <div>
+                <label>Gender</label>
+                Male<input type="radio" name="gender" value="male">
+                Female<input type="radio" name="gender" value="female" checked><br>
+            </div>
+
+            <div>
+                <label>phone</label>
+                <input type="tel" name="phone" placeholder="####" class="bigInput"><br>
+            </div>
+
+            <div>
+                <label>Addresss</label>
+                <input type="text" name="city" placeholder="city" class="bigInput">
+                <input type="text" name="state" placeholder="state" class="bigInput"><br>
+            </div>
+
+            <div>
+                <label>Your Query</label>
+                <textarea name="QueryArea"></textarea><br>
+            </div>
+
+            <div>
+                <label>Appointment Type</label>
+                <div id="checkbox_div">
+                    Select which appointment type(s) you require <br>
+                    <input type="checkbox" name="AppointmentType" class="checkboxInput">Cervix checkup <br>
+                    <input type="checkbox" name="AppointmentType" class="checkboxInput">Hear checkup <br>
+                    <input type="checkbox" name="AppointmentType" class="checkboxInput">Eye checkup <br>
+                    <input type="checkbox" name="AppointmentType" class="checkboxInput">Hearing Test <br>
+                    <input type="submit" value="Send" id="formButton">
+                </div>
+                <br>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
