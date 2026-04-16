@@ -55,7 +55,7 @@ div {
 
 ###  The Fix — `box-sizing: border-box`
 
-With `border-box`, the `width` you set **includes** padding and border. What you write is what you get.
+With `border-box`, the `width` you set **includes** **padding and border but not margin**. What you write is what you get.
 
 ```css
 div {
@@ -317,6 +317,7 @@ These are the screen widths where your layout typically needs to change:
 }
 ```
 
+> Placing media queries at the **very end** of your CSS file is a common and widely recommended practice
 ---
 
 ### `max-width` vs `min-width`
