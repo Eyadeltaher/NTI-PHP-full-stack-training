@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 80px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    background-color: transparent;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 30px;
+}
+
+#logo {
+    width: 180px;
+}
+
+.navbar ul li a.active {
+    border-top: 3px solid #e0494c;
+    padding-top: 30px;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-family: "Alegreya", serif;
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #c7a17a;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/resources/drew-coffman-1872.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.heroContent span {
+    font-size: 23px;
+    display: block;
+    color: rgba(255, 255, 255, .92);
+    font-family: "Alegreya Sans", sans-serif;
+}
+
+.heroContent h1 {
+    font-family: "Alegreya", serif;
+    font-weight: 400;
+    font-size: 80px;
+    margin-bottom: 15px;
+}
+
+.heroContent p {
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+
+.btn-solid,
+.btn-outline {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 5px;
+    transition: 0.3s;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 700;
+}
+
+.btn-solid {
+    background-color: #8e7754;
+    color: white;
+    border: 2px solid #8e7754;
+
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-outline:hover,
+.btn-solid:hover {
+    background-color: white;
+    color: black;
+}
+
+.whoWeAre,
+.ourLocation {
+    padding: 100px 18%;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.about-image,
+.about-content,
+.location-image,
+.baking-container {
+    flex: 1;
+}
+
+.about-image img,
+.baking-container img {
+    width: 100%;
+    display: block;
+}
+
+.about-content h3 {
+    font-size: 32px;
+    font-weight: 250;
+    margin-bottom: 25px;
+    color: #333;
+    font-family: "Alegreya", serif;
+}
+
+.about-content .description {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.8;
+    color: #777;
+    margin-bottom: 30px;
+    font-family: "Alegreya Sans", sans-serif;
+}
+
+.icon-list {
+    list-style: none;
+}
+
+.icon-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    font-size: 15px;
+    color: #555;
+}
+
+.ourLocation {
+    background-color: rgb(246, 248, 248);
+}
+
+.location-image img {
+    width: 100%;
+    display: block;
+}
+
+.OurBaking {
+    padding: 80px 18%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.Baking-content h3 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 32px;
+    font-weight: 250;
+    margin-bottom: 25px;
+    color: #333;
+    font-family: "Alegreya", serif;
+}
+
+.Baking-content .description,
+.baking-description {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.8;
+    color: #777;
+    margin-bottom: 30px;
+    font-family: "Alegreya Sans", sans-serif;
+}
+
+.baking-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+}
+
+.baking-container img {
+    margin-bottom: 30px;
+}
+
+.baking-container h4 {
+    margin-bottom: 25px;
+    font-family: "Alegreya", serif;
+    font-weight: 300;
+    font-size: 22px;
+    font-weight: 220;
+}
+
+.details-content {
+    background-color: #403d38;
+    padding: 60px 18%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.details-content div {
+    flex: 1;
+    padding: 0px 20px;
+}
+
+.details-content h5 {
+    margin-bottom: 25px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 450;
+}
+
+.arr-list {
+    list-style: none;
+    padding: 0;
+}
+
+.arr-list li {
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 12px 0;
+    font-size: 15px;
+    color: #969696;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.arr-list li::before {
+    content: '›';
+    color: #999;
+    margin-right: 10px;
+}
+
+.contact {
+    position: relative;
+    z-index: 1;
+}
+
+.contact::before {
+    content: "";
+    background-image: url('/resources/contact-details-map.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.arr-list-contact li {
+    align-items: center;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    font-size: 15px;
+    color: #969696;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-about-us-dis {
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 15px;
+    font-weight: 350;
+    color: #969696;
+    line-height: 1.86em;
+}
+
+.footer {
+    background-color: #353330;
+    height: 300px;
+    text-align: center;
+}
+
+.footer img {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.footer p {
+    color: #777;
+    font-size: small;
+}
+
