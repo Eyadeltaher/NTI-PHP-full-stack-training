@@ -723,7 +723,7 @@ move_uploaded_file($tmp_name, "uploads/" . $new_name);
 <?php
   $nums = [3, 1, 4, 1, 5, 9, 2, 6];
 
-  echo count($nums);              // 8   — number of elements
+  echo count($nums);             // 8   — number of elements
   echo array_sum($nums);         // 31  — sum of all values
   echo implode(", ", $nums);     // 3, 1, 4, 1, 5, 9, 2, 6
 
