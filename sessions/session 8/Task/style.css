@@ -1,0 +1,120 @@
+/* ============================================================
+   style.css — Custom styles for ShopZone
+   ============================================================ */
+
+/* ---- GLOBAL ---- */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* ---- NAVBAR ---- */
+.navbar-brand {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+/* ---- HERO HEADER ---- */
+/*
+  .hero-header uses a background image.
+  Replace the url() below with your actual image path.
+  e.g. url('images/hero.jpg')
+
+  The overlay div is layered on top to darken the image
+  so white text is readable.
+*/
+.hero-header {
+  background-image: url('https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1400');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;                          /* covers the full header */
+  background: rgba(0, 0, 0, 0.55);  /* dark semi-transparent overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content h1 {
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  font-size: clamp(2rem, 5vw, 4rem); /* responsive font size */
+}
+
+/* ---- PAGE TITLE BAR ---- */
+.page-title {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+}
+
+.page-title p {
+  color: #adb5bd !important;
+}
+
+/* ---- PRODUCT CARDS ---- */
+.product-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);        /* lift effect on hover */
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15) !important;
+}
+
+.product-img {
+  height: 200px;
+  object-fit: cover;                   /* keeps image ratio, crops nicely */
+  background-color: #e9ecef;
+}
+
+/* ---- FORMS ---- */
+.form-card {
+  border: none;
+  border-radius: 16px;
+}
+
+.form-control {
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  border: 1.5px solid #dee2e6;
+  transition: border-color 0.2s;
+}
+
+.form-control:focus {
+  border-color: #343a40;
+  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.15);
+}
+
+.btn-dark {
+  border-radius: 8px;
+  padding: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: background 0.2s;
+}
+
+.btn-dark:hover {
+  background-color: #212529;
+}
+
+/* ---- ALERTS ---- */
+.alert-danger {
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+/* ---- FOOTER ---- */
+footer {
+  margin-top: auto;
+}
