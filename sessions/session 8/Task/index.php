@@ -1,35 +1,24 @@
 <?php
-// ============================================================
-// index.php — HOME PAGE
-// This is the landing page with navbar + hero header section
-// ============================================================
-session_start(); // Always start session at the top of every page
+
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ShopZone – Home</title>
 
-  <!-- Bootstrap 4.4 CSS -->
-  <link rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
-  <!-- Our custom styles -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- ======= NAVBAR (shared file) ======= -->
   <?php include 'navbar.php'; ?>
 
-  <!-- ======= HERO HEADER ======= -->
-  <!--
-    The header uses a background image.
-    We use inline style to set the bg image path.
-    The overlay div darkens the image so text is readable.
-  -->
   <header class="hero-header">
     <div class="hero-overlay">
       <div class="hero-content text-center text-white">
@@ -42,7 +31,6 @@ session_start(); // Always start session at the top of every page
     </div>
   </header>
 
-  <!-- ======= FEATURES SECTION (bonus UI) ======= -->
   <section class="py-5 bg-light">
     <div class="container">
       <div class="row text-center">
@@ -75,13 +63,12 @@ session_start(); // Always start session at the top of every page
     </div>
   </section>
 
-  <!-- ======= FOOTER ======= -->
   <footer class="bg-dark text-white text-center py-3">
     <p class="mb-0">&copy; 2024 ShopZone. All rights reserved.</p>
   </footer>
 
-  <!-- Bootstrap JS + dependencies -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
