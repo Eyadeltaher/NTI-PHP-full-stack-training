@@ -1,4 +1,3 @@
-
 ## What is the Request Lifecycle?
 
 Every time a user visits a page or submits a form, an HTTP request travels from their browser to your Laravel application and a response travels back. The request lifecycle is the complete journey of that request — every step Laravel takes internally from the moment the request arrives to the moment the response is sent back.

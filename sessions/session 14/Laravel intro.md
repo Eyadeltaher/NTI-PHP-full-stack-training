@@ -1,6 +1,3 @@
-# Laravel 12  Notes
-
----
 
 ## What is Laravel?
 
